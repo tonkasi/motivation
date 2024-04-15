@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox basics</title>
+    <style>
+        .flex-container {
+            margin-bottom: 10px;
+            /*  display: inline-flex; */
+            display: flex;
+            background-color: grey;
+
+        }
+
+        .flex-item {
+            padding: 20px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+            margin: 10px;
+            flex: 1;  /* flex-grow flex-shrink flex-basis */
+            /* flex: 1 1 0 */
+
+            /* flex-grow: 1;
+            flex-shrink: 1; */
+           /*  flex-basis: 0; */
+           
+        }
+
+        .flex-item a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            background-color: rgb(142, 142, 223);
+            width: max-content;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /*  .flex-item:nth-child(3) {
+            background-color: red;
+            color: white;
+/*             flex-basis: 600px;
+            flex-shrink: 0; */
+        /*  }  */
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2>Naslov članka</h2>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, illo.
+
+            <a href="#">Pokaži više</a>
+        </div>
+        <div class="flex-item">
+            <h2>Naslov članka</h2>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iusto aspernatur
+            vel nulla ut porro voluptate, molestiae veniam sed esse?
+            <a href="#">Pokaži više</a>
+        </div>
+        <div class="flex-item">
+            <h2>Naslov članka</h2>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, placeat.
+            <a href="#">Pokaži više</a>
+        </div>
+        <div class="flex-item">
+            <h2>Naslov članka</h2>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, numquam, ut at alias
+            veniam labore vel atque, praesentium quas eos amet totam. Commodi eum praesentium autem ut neque odit
+            tempore.
+            <a href="#">Pokaži više</a>
+        </div>
+        <div class="flex-item">
+            <h2>Naslov članka</h2>5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio
+            accusantium nihil cumque eos nisi optio incidunt consequatur quidem maxime?
+            <a href="#">Pokaži više</a>
+        </div>
+    </div>
+
+    <!--     <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div> -->
+
+</body>
+
+</html>

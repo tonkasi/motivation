@@ -1,0 +1,55 @@
+/* 1. Promjena stilova na temelju širine zaslona:
+    */
+    @media (max-width: 768px) {
+        /* Stilovi primijenjeni na zaslone širine 768 piksela i manje */
+      }
+   
+      @media (min-width: 769px) and (max-width: 1024px) {
+        /* Stilovi primijenjeni na zaslone širine između 769 i 1024 piksela */
+      }
+   
+      @media (min-width: 1025px) {
+        /* Stilovi primijenjeni na zaslone širine 1025 piksela i više */
+      }
+   
+     /*  U ovom primjeru, stilovi se prilagođavaju na temelju minimalne i/ili maksimalne širine zaslona. */
+   
+   /* 2. Promjena stilova na temelju razlučivosti zaslona:
+       */
+      @media (min-resolution: 300dpi) {
+        /* Stilovi primijenjeni na uređaje s razlučivošću od 300 dpi i više */
+      }
+   
+      @media (max-resolution: 72dpi) {
+        /* Stilovi primijenjeni na uređaje s razlučivošću do 72 dpi */
+      }
+      
+   
+   /*    U ovom primjeru, stilovi se prilagođavaju na temelju minimalne i/ili maksimalne razlučivosti zaslona, izražene u dpi (piksela po inču).
+    */
+   /* 3. Promjena stilova na temelju orijentacije zaslona:
+       */
+      @media (orientation: landscape) {
+        /* Stilovi primijenjeni na zaslone u pejzažnoj (horizontalnoj) orijentaciji */
+      }
+   
+      @media (orientation: portrait) {
+        /* Stilovi primijenjeni na zaslone u portretnoj (vertikalnoj) orijentaciji */
+      }
+      
+   
+    /*   U ovom primjeru, stilovi se prilagođavaju na temelju orijentacije zaslona, odnosno jesu li zasloni postavljeni vodoravno (pejzažna) ili okomito (portretna).
+    */
+   /* 4. Promjena stilova na temelju vrste uređaja:
+       */
+      @media handheld {
+        /* Stilovi primijenjeni na prijenosne uređaje (npr. mobilni telefoni) */
+      }
+   
+      @media screen {
+        /* Stilovi primijenjeni na zaslone (desktop računala, tableti itd.) */
+      }
+   
+      @media print {
+        /* Stilovi primijenjeni pri ispisu*/
+      }

@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* kutije */
+
+p {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    transition-duration: 1s;
+    
+}
+
+p:hover {
+    transform: rotate(45deg);
+}
+
+div {
+    background-color: #9cf;
+    border: 1px solid #333;
+    width: 300px;
+    height: 100px;
+    margin: 4em auto;
+}
+
+/* Tranzicije */
+
+div:first-of-type {
+    /* transition-duration: 2s;
+    transition-property: width; */
+    transition: width 2s;
+}
+
+div:first-of-type:hover {
+    width: 400px;
+    background-color: red;
+}
+
+div:nth-of-type(2) {
+    transition: background-color 700ms;
+}
+
+div:nth-of-type(2):hover { 
+    background-color: #ff0;
+}
+
+div:nth-of-type(3) {
+    transition: transform 700ms;
+}
+
+div:nth-of-type(3):hover { 
+    transform: translateX(500px);
+}
+
+div:nth-of-type(4) {
+    transition: transform 1500ms;
+}
+
+div:nth-of-type(4):hover { 
+    transform: rotate(720deg);
+}
+
+/* delay */
+
+div:nth-of-type(5) {
+    transition: transform 1500ms 2s;
+    /* transition-delay: 2s; */
+}
+
+div:nth-of-type(5):hover { 
+    transform: rotate(90deg);
+}
+
+/* timing-function */
+
+div:nth-of-type(6) {
+    transition: transform 2000ms cubic-bezier(0, 0.02, 0.48, 2.05) 500ms, opacity 2000ms ease 2500ms ;
+}
+
+div:nth-of-type(6):hover { 
+    transform: rotate(90deg);
+    opacity: 0.2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition-duration: 500ms;
+    transition-property: background-color, color;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+

@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    background-color: #f93;
+    border: 1px solid #333;
+    width: 300px;
+    height: 150px;
+    margin: 4em auto;
+}
+
+.translate {
+    transform: translate(150px, -20px);  /* translateY(-20px); translateX(150px); */ 
+    /* translate: 150px, -20px; */
+}
+
+.rotate {
+    transform: rotate(30deg); /* deg, rad, grad, turn */
+   /*  rotate: 30deg; */
+}
+
+.scale {
+    transform: scale(150%, 1.8); /* scaleX | scaleY*/
+}
+
+.skew {
+    transform: skew(20deg, 15deg); /* skewX | skewY */
+}
+
+.multiple {
+    transform: translate(100px, 30px) rotate(30deg) scale(0.5, 0.3) ;
+}

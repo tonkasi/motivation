@@ -1,0 +1,8 @@
+#prvi_paragraf,
+#ime_tvrtke,
+[title],
+section div p,
+footer>header>h2:hover
+{
+    color: red;
+}

@@ -1,0 +1,35 @@
+
+/* Selektori atributa */
+header a[href^="https://example"] {
+    color: rgb(15, 238, 34); /* Zelena boja za linkove koji počinju s "https://example"*/
+}
+
+/* Pseudoklase */
+main section:nth-child(odd) {
+    background-color: #e2dfdf; /* Siva pozadina za neparni članak unutar glavnog sadržaja */
+}
+
+/* Pseudoelementi */
+article h2::before {
+    content: "*** "; 
+    color: #ff9900; 
+}
+
+/* Pseudoelementi */
+article h2::after {
+    content: "*** "; 
+    color: #ff9900; 
+}
+
+/* Kombinatori */
+nav > ul {
+    list-style-type: none;
+}
+ul > li:last-child {
+   font-weight: bold; /* Podesi font zadnjem elementu liste na bold */
+}
+
+footer p {
+    text-align: center; /* Centriraj tekst u paragrafu u podnožju */
+    color: #777; /* Siva boja teksta u podnožju */
+}

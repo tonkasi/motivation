@@ -1,0 +1,44 @@
+#drugi_id {
+    color: blue;
+}
+
+#first_paragraph {
+    font-style: italic;
+}
+
+.bigger {
+    font-size: 50px;
+}
+
+h1 {
+    color: red;
+}
+
+.color_magenta {
+    color: magenta;
+}
+
+.default {
+    color: inital;
+    background-color: white;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+div {
+    color: red;
+}
+
+strong {
+    color: darkmagenta;
+}
+
+span {
+    color: orangered;
+}
+
+
+
+

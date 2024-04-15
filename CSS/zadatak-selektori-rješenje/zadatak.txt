@@ -1,0 +1,1 @@
+Bez promjena u dokumentu index.html, uredite ga da izgleda kao na slici final.PNG upotrebom različitih vrsta selektora.

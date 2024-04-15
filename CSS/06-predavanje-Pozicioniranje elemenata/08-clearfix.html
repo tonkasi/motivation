@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearfix</title>
+    <style>
+
+        .parent {
+            background-color: blue;
+        }
+
+        .child {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            margin: 10px;
+        }
+
+        .parent::after {
+            content: "";
+            clear: both;
+            display: table; /*može i block*/
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child">Float1</div>
+        <div class="child">Float2</div>
+        <div class="child">Float3</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border, padding, margine</title>
+    <style>
+
+        body {
+            background-color:beige;
+        /*     padding: 0;
+            margin: 0; */
+        }
+        div {
+            background-color: gold;
+        }
+
+        p {
+            background-color: antiquewhite;
+        }
+
+        .width {
+            width: 400px;
+        }
+
+        .height {
+            height: 200px;
+        }
+
+        .border {
+            border: 2px solid #333;
+        }
+
+        .border-width {
+            border: 6px solid #333;
+        }
+
+        .border-style {
+            border: 8px groove red;
+        }
+
+        .multiple-borders {
+            border-top: 6px solid #333;
+            border-right: 10px groove #f33;
+            border-bottom: 4px dashed #3f3;
+            border-left: 8px dotted #33f;
+        }
+
+        .padding {
+            padding: 20px;
+        }
+
+        .padding-multiple {
+          /*   padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 50px;
+            padding-left: 5px; */
+            padding: 20px 40px 50px 5px;
+            text-align: justify;
+        }
+
+        .padding-top-bottom-left-right {
+           /*  padding: 10px 50px; */
+            padding: 50px;
+            text-align: justify;
+            padding-right: 10px;
+        }
+
+        .margin {
+            margin: 40px;
+        }
+
+        .margin-multiple {
+            background-color: aquamarine;
+            /* margin-top: 20px;
+            margin-right: 30px;
+            margin-bottom: 50px;
+            margin-left: 200px; */
+            margin: 20px 30px 50px 200px;
+        }
+
+        .margin-two-values {
+            margin: 20px 40px;
+            background-color: lightskyblue
+        }
+
+        .margin-middle {
+            background-color: lightgreen;
+            /* margin-left: auto;
+            margin-right: auto; */
+            margin: 1em auto;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h2>Border</h2>
+
+    <div class="width height border"></div>
+    
+    <hr/>
+
+    <div class="width height border-width">
+    </div>
+
+    <hr/>
+
+    <div class="width height border-style">
+    </div>
+
+    <hr/>
+    <div class="width height multiple-borders">
+    </div>
+
+    <hr/>
+
+    <h2>Padding</h2>
+    <div class="height width border padding">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At autem tempora laborum consequuntur ad facere vero fuga eligendi eveniet aliquid, eum ea! Possimus iste ratione odit pariatur adipisci a natus reprehenderit soluta autem! Ipsa quaerat dolor id! Ab eligendi aliquid excepturi rem? Explicabo similique sint repellendus animi cum nesciunt aperiam?
+    </div>
+
+    <hr/>
+    <div class="height width border padding-multiple">
+        Ja sam ovaj zadnji. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At autem tempora laborum consequuntur ad facere vero fuga eligendi eveniet aliquid, eum ea! Possimus iste ratione odit pariatur adipisci a natus reprehenderit soluta autem! Ipsa quaerat dolor id! Ab eligendi aliquid excepturi rem? Explicabo similique sint repellendus animi cum nesciunt aperiam?
+    </div>
+
+    <hr/> 
+
+    <div class="height width border padding-top-bottom-left-right">
+        Ja sam ovaj zadnji zadnji. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At autem tempora laborum consequuntur ad facere vero fuga eligendi eveniet aliquid, eum ea! Possimus iste ratione odit pariatur adipisci a natus reprehenderit soluta autem! Ipsa quaerat dolor id! Ab eligendi aliquid excepturi rem? Explicabo similique sint repellendus animi cum nesciunt aperiam?
+        imus iste ratione odit pariatur adipisci a natus reprehenderit soluta autem! Ipsa quaerat dolor id! Ab eligendi aliquid excepturi rem? Explicabo similique sint repellendus animi cum nesciunt aperiam? Explicabo similique sint repellendus animi cum nesciun.
+    </div>
+
+    <h2>Margine</h2>
+
+    <p class="width height padding border margin"> Lorem ipsum</p>
+    <p class="width height padding border margin-multiple"> Lorem ipsum</p>
+    <p class="width height padding border margin-two-values"> Lorem ipsum</p>
+    <p class="width height padding border margin-middle"> Lorem ipsum</p>
+    
+
+</body>
+</html>

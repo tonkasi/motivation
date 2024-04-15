@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox basics</title>
+    <style>
+        .flex-container {
+            margin-bottom: 10px;
+           /*  display: inline-flex; */
+            display: flex;
+            background-color: grey;
+            gap: 10px;
+            width: 500px;
+        }
+
+        .flex-item {
+            padding: 20px;
+            border: 1px solid black;
+            width: 1000px;
+            background-color: antiquewhite;
+            flex-shrink: 1;
+            margin: 10px
+        }
+
+        .flex-item:nth-child(3) {
+            background-color: red;
+            color: white;
+            width: 2000px;
+            /* flex-shrink: 3; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+<!--     <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div> -->
+    
+</body>
+</html>

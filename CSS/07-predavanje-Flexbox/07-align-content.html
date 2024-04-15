@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox basics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            background-color: grey;
+            height: 600px;
+            flex-wrap: wrap;
+            align-content: space-around; /* isto kao justify-content + stretch */
+        }
+
+        .flex-item {
+            padding: 20px;
+            border: 1px solid black;
+            margin: 20px;
+            background-color: antiquewhite;
+            text-align: center;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+
+</body>
+
+</html>

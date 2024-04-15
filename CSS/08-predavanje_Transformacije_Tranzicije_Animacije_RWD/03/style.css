@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* krugovi */
+
+div {
+    background-color: #9cf;
+    border: 1px solid #333;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 2em 0;
+    text-align: center;
+    line-height: 145px;
+    position: relative;
+}
+
+div:first-of-type {
+    animation-name: animacija1;
+    animation-duration: 2000ms;
+    /* animation-timing-function: ease-out;
+    animation-direction: ;
+    animation-fill-mode: ;
+    animation-iteration-count: ;
+    animation-play-state: ; */
+}
+
+@keyframes animacija1 {
+    /* from {
+
+    }
+
+    to {
+
+    } */
+
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left:1000px;
+        background-color: yellow;
+    }
+}
+
+    
+div:nth-of-type(2) {
+    animation: animacija2 5s ease-in-out 2000ms;
+}
+
+
+@keyframes animacija2 {
+    0% {
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        left: 1000px;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        left: 0;
+        transform: rotate(2700deg);
+    }
+    
+}
+
+div:nth-of-type(3) {
+    animation: animacija3 4s ease-in-out 2s infinite;
+}
+
+@keyframes animacija3 {
+    0% {
+        left: 0;
+       
+    }
+
+    30% {
+        left: 80%;
+        
+    }
+
+    100% {
+        left: 0;
+    }
+ 
+}
+
+div:nth-of-type(4) {
+    animation: animacija4 2000ms ease-in 2 alternate-reverse;
+}
+
+@keyframes animacija4 {
+
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 80%
+    }
+}
+
+
+div:nth-of-type(5) {
+    animation: animacija5 2s ease 2s 4 alternate backwards;
+    /* animation-fill-mode */
+
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes animacija5 {
+    0% {
+        left: 0;
+        background-color: red;
+        font-size: 32px;
+    }
+
+    100% {
+        left: 80%;
+        background-color: yellow;
+    }
+}
+
+div:nth-of-type(5):hover {
+    animation-play-state: paused;
+}

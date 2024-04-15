@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        header {
+            color: red;
+        }
+
+        footer {
+            color: orange;
+        }
+
+        p:first-child {
+            text-decoration: underline wavy red;
+        }
+
+        p:last-child {
+            color: blue;
+        }
+
+        p:first-of-type {
+            font-weight: bold;
+        }
+
+        p:last-of-type {
+            text-transform: uppercase;
+        }
+
+        p:nth-child(4) {
+            font-family: Creepster;
+        }
+
+        p:nth-of-type(2) {
+            color: rgb(33, 56, 56);
+        }
+
+        article:nth-child(even) {
+            color: magenta;
+        }
+
+        #drugaciji::first-line {
+            text-transform: lowercase;
+            font-style: italic;
+        }
+
+        #drugaciji::first-letter {
+            font-size: 40px;
+            color: red;
+        }
+
+        article:nth-child(odd)::first-letter { 
+            color: brown;
+            font-size: 32px;
+        }
+
+        h1::before {
+            content: "*** ";
+            font-size: 24px;
+        }
+
+        h1::after {
+            content: " ***";
+            font-size: 24px;
+        }
+
+        #drugaciji::selection {
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zaglavlje</h1>
+        <p>Odlomak u zaglavlju tog tipa</p>
+    </header>
+    <hr>
+    <section>
+        <p>Odlomak s1</p>
+        <p>Odlomak s1</p>
+        <p>Odlomak s1</p>
+        <p>Odlomak s1</p>
+        <p>Odlomak s1 zadnje dijete</p>
+    </section>
+    <hr>
+    <section>
+        <h2>Naslov sekcije 2</h2>
+        <p>Odlomak s2 prvi tog tipa</p>
+        <p id="drugaciji"> Odlomak s2 Lorem IPSUM dolor sit amet, consectetur adipisicing ELIT.</p>
+        <p>Odlomak s2</p>
+        <p>Odlomak s2</p>
+    </section>
+    <hr>
+    <footer>
+        <p>Odlomak F</p>
+        <p>Odlomak F</p>
+        <p>Odlomak F zadnji tog tipa</p>
+        <section>
+            <a href="#">Ja sam link</a>
+        </section>
+    </footer>
+
+    <hr>
+    <div>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa.</article>
+        <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsa.</article>
+    </div>
+    
+    
+</body>
+</html>

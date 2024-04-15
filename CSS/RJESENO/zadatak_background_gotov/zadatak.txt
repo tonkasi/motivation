@@ -1,0 +1,8 @@
+Pokušajte dobiti efekt kao na slika_rjesenje.JPG kombiniranjem više priloženih slika. 
+
+font-family dokumenta je Tahoma, sans serif, font-size 16px i boja slova #ccc.
+
+Boja pozadine naslova je #333, a text je poravnat u sredinu.
+
+
+Hint: Vertikalna pozicija slike fire.png je na 30% visine elementa u kojem se nalazi i veličina je 18%. 

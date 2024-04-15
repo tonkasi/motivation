@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori atributa</title>
+    <style>
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        /* Selektori atributa */
+
+        /* ima tu vrstu atributa */
+        [title] {
+            text-decoration: underline solid red;
+        }
+
+        [href] {
+            color: red;
+        }
+
+        /* ima taj atribut i točno tu vrijednost */
+        [title="prvi odlomak"] {
+            font-weight: bold;
+        }
+
+        /* taj atribut sadrži tu vrijednost bilo gdje */
+        [title*=odlomak] {
+            color: darkgreen;
+        }
+
+        /* mora imati tu riječ "odlomak" i razmak prije ili poslije nje ili samo tu riječ */
+        [title~="odlomak"] {
+            text-transform: uppercase;
+        }
+
+        /* mora započeti s tim izrazom */
+        [title^="odlomak"] {
+            font-style: italic;
+        }
+        
+        /* mora završiti s tim izrazom */
+        [title$="Predzadnji"] {
+            color: darkorange;
+        }
+
+        /* mora imati taj izraz odvojen sa "-" prije ili poslije njega*/
+        [title|="odlomak"] {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 title="naslov stranice">Lorem ipsum dolor</h1>
+    <h2>Lorem ipsum</h2>
+    <h3>Lorem, ipsum dolor.</h3>
+
+    <p title="prvi odlomak">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum a veniam eveniet fugiat praesentium tempore eos. Similique doloremque labore eum maxime cum, dicta ipsa saepe, totam esse accusantium non velit, doloribus optio porro quae voluptatibus iure ab corporis blanditiis at sed natus quo excepturi? Odit suscipit asperiores excepturi tenetur?</p>
+
+    <p title="odlomak-2">Perspiciatis architecto quo minus sunt dolorum harum ad! Voluptatem saepe labore neque rerum ipsa? Necessitatibus quis cum sint asperiores explicabo perspiciatis adipisci provident quisquam dolor. Quis dolorem ipsa nostrum soluta asperiores, at aut assumenda mollitia quae? Dolorum aliquam nemo excepturi quaerat veritatis harum dolor consequuntur, debitis autem, adipisci, blanditiis culpa.</p>
+    
+    <p title="odlomak 3">Architecto dolore fugiat itaque inventore ipsa qui, voluptatum maxime adipisci, amet vitae distinctio cupiditate aliquid consectetur, quibusdam tenetur cumque reprehenderit. Voluptatem eligendi qui, enim explicabo perferendis quam. Iste distinctio autem neque laudantium tempore? Obcaecati incidunt consequuntur dolores quo saepe dolorum quod ipsam dicta illo. Quae fugiat aliquam earum voluptates tenetur.</p>
+
+    <p title="odlomakPredzadnji">Impedit incidunt, ab consequatur quos laudantium id non hic soluta? Earum nam odit voluptates. Ad, quo labore assumenda aliquam quaerat sapiente nam eligendi. Soluta qui a natus quibusdam reprehenderit ratione. Ea soluta rerum saepe, facilis ut eius, nobis iste quod minima sed blanditiis quasi magnam esse officia, cum repudiandae ullam.</p>
+
+    <p title="nestoodlomak">Još jedan</p>
+
+    <p>Praesentium asperiores dolor cupiditate unde inventore ex quos cum dolorem aliquid repellat, repudiandae quam necessitatibus eum sed dicta repellendus laborum atque quis magni placeat. Sit sunt saepe tenetur amet maxime consequatur cum quas perferendis. Explicabo fugiat quidem at eum, autem temporibus dignissimos quis eveniet, veritatis assumenda molestiae ipsum possimus provident.</p>
+
+    <a title="Ja sam link" href="">Link</a>
+</body>
+</html>

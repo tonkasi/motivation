@@ -1,0 +1,16 @@
+
+html{
+    font-family: 'Tahoma', sans-serif;
+    font-size: 16px;
+    color:#ccc;
+}
+
+body{
+    background: url('fire.png') center 30%/18% no-repeat fixed, url('pattern.png'), url('blossom.jpg')center center/cover no-repeat fixed;
+/*samo bg ide kad vise slika stavljamo a bg img kad ide jedna*/
+}
+
+h1{
+    background: #333;
+    text-align: center;
+}

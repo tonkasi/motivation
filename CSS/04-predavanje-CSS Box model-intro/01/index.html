@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjezba display</title>
+
+    <style>
+        h1 {
+            background-color: aqua;
+            width: 400px;
+            display: inline-block;
+         /*    display: inline;  */
+        }
+
+        span {
+            background-color: brown;
+            width: 50%;
+        }
+
+        h2 {
+            background-color: red;
+        }
+
+        div:nth-of-type(1) {
+            display: inline-block;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Prvi naslov u kojem je i <span>span još teksta</span></h1>
+    
+    <div>
+        <h2>Drugi naslov</h2>
+    </div>
+
+    <div>
+        <p>Ja sam paragraf koji sadrži <a href="#">link</a>. Klikni ga!</p>
+    </div>
+    
+    <div id="mijenjam-se">
+        <p>Ja sam tekst u paragrafu koji je u divu</p>
+        <em>Ja sam em unutar diva</em>
+    </div>
+</body>
+</html>

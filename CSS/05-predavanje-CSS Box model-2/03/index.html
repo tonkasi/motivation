@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margine/radijus ruba</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+    /*     * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        h1 {
+            margin: 0 0 50px 0;
+        }
+
+        h2 {
+            margin: 20px 0 0 0;
+        }
+
+        p {
+            margin: 20px auto;
+            width: 30%;
+            background-color: aqua;
+        }
+
+        .border-radius {
+            margin: 50px;
+            background-color: blue;
+            width: 100px;
+            height: 200px;
+           /*  border-top-left-radius: 20px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 15px; */
+            border:  2px solid black;
+          /*   border-radius: 20px 30px 5px 15px; */
+            border-radius: 40px;
+            box-shadow: 5px 10px 8px black;
+        }
+
+        .little-tweak {
+            width: 200px;
+            border-radius: 100%;
+           /*  display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; */
+            text-align: center;
+            line-height: 200px;
+            color: white;
+        }
+
+        .leaf {
+            background-color: green;
+            width: 200px;
+            border-radius: 0;
+           /*  border-top-left-radius: 100%;
+            border-bottom-right-radius: 100%; */
+            border-top-right-radius: 100%;
+            border-bottom-left-radius: 100%; 
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Glavni naslov</h1>
+    <h2>Sljedeći naslov</h2>
+
+    <p>Želim biti na sredini</p>
+
+    <div class="border-radius"></div>
+
+    <div class="border-radius little-tweak">Neki tekst</div>
+
+    <div class="border-radius leaf"></div>
+</body>
+</html>

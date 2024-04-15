@@ -1,0 +1,14 @@
+U priloženom index.html dokumentu:
+1. Naslov prve razine neka koristi font-family 'Saira Stencil One', cursive. 
+Veličina neka mu bude 5 puta veća od zadane veličine roditeljskog elementa (5em u zancenju) , neka bude poravnat u sredinu, boje #F93 i 
+neka ima sjenu pomaknutu po vertikali i horizontali za 5px uz radijus sjenčanja 8px boje #333. 
+2. Naslov druge razine koristi font-family 'Dancing Script', cursive, boje je #090, veličina 3 puta veća od zadane veličine roditeljskog elementa.
+Text je podcrtan.
+3. Naslov treće razine koristi font-family 'Courier New', Courier, monospace.
+Veličine je 36px i sva slova su velika.
+4. Naslov četvrte razine koristi font-family Arial, Helvetica, sans-serif;, veličine je 32px, tekst je ukošen, sva slova su mala i poravnat je desno.
+5. Paragraf koristi font-family Georgia, 'Times New Roman', Times, serif.
+ Veličina fonta je 2 puta veća od zadane veličine roditeljskog elementa. Visina linije je 140%, a tekst je poravnat podjednako s lijeve i desne strane.
+
+
+Saira Stencil One i Dancing Script su google fontovi. 
